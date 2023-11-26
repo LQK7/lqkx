@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'MuseoModerno', cursive;
+
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* background-image: linear-gradient(123deg, #60f5f5 , #c5a2b8 ,#7796be  , #bbfdfd); */
+    background-image: linear-gradient(123deg  , #06314f, #181d29 , #435b9e);
+    background-size: 600% 600% ;
+    animation: background-gradient 10s ease infinite;
+  }
+  @keyframes background-gradient {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+  @-webkit-keyframes background-gradient {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+
+
+  header{
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 5px 15px;
+}
+
+header .logo{
+  position: relative;
+  width: 110px;
+  height: 105px; 
+}
+
+
+.hed a {
+    font-weight: 600;
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.nav_linkes{
+    list-style: none;
+}
+.nav_linkes li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_linkes li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_linkes li a:hover {
+    color: #435b9e;
+}
+
+
+.container{
+    max-width: 600px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+    padding: 20px 20px;
+    border-radius: 15px;
+}
+.container  .title{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 500; 
+    position: relative;
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 00;
+    bottom: 0;
+    height: 3px;
+    width: 200px;
+    background: linear-gradient(123deg, #60f5f5 , #06314f , #bbfdfd);
+}
+.container form .user_details{
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px; 
+    justify-content: space-between;
+}
+form .user_details .input_pox{
+    margin-bottom: 15px;
+    margin: 20px 0 12px 0;
+    width: calc( 100% / 1 - 20px);
+
+}
+.user_details .input_pox .datails{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    
+}
+
+.user_details .input_pox input{
+    height: 55px;
+    width: 100%;
+    outline-color: #9b59b6;
+    border-radius:15px;
+    border: 2px solid #435b9e;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    
+
+}
+.user_details .input_pox input:focus,
+.user_details .input_pox input:valid{
+border-color: #9b59b6;
+}
+form .gender_details .gender_title{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+form .gender_details .category{
+    display: flex;
+    width: 30%;
+    margin: 10px 0px;
+    justify-content: space-between;
+}
+.gender_details .category label{
+color: #fff;
+display: flex;
+}
+.gender_details .category .dot{
+height: 18px;
+width: 18px;
+background: #d9d9d9;
+border-radius: 50%;
+margin-right: 10px;
+border: 5px solid transparent;
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two
+{
+border-color: #d9d9d9;
+background-color: #06314f;
+}
+form input[type="radio"]{
+    display: none;
+}
+
+form .button{
+    height: 45px;
+    margin: 45px 0;
+    transition: all 0.2s ease;
+
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background-image: linear-gradient(123deg  , #06314f , #435b9e);
+
+}
+
+/* ----------------------------- */
+
+/* @media (max-width: 584px){
+    .container{
+        max-width: 90%;
+    }
+    form .user_details .input_pox{
+        margin-bottom: 10px;
+        width:100%;
+    }
+    form .gender_details .category{
+        width: 100%;
+    }
+    .container form .user_details{
+        max-height: 300px;
+        overflow: scroll;
+    }
+    .user_details::-webkit-scrollber{
+     width: 0;
+    }
+}
+
+
+
+ */
