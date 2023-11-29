@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
 
 *{
@@ -8,8 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'MuseoModerno', cursive;
-
+    font-family: 'MuseoModerno', 'cursive';
 }
 
 body{
@@ -103,6 +103,7 @@ header{
     transition: 0.6s;
     padding: 5px 15px;
     z-index: 10000;
+    
 }
 
 header.sticky{
@@ -117,14 +118,16 @@ header.sticky{
 
 header .logo{
   position: relative;
-  width: 100px;
-  height: 95px; 
+  margin-top:20px ;
+  width: 250px;
+  height: 100x; 
 }
 
 
 .hed a {
     font-weight: 600;
     font-size: 15px;
+    font-family: 'MuseoModerno', 'cursive';
     color: #ffffff;
     text-decoration: none;
 }
@@ -212,18 +215,27 @@ header .logo{
     letter-spacing: 2px;
   }
   
-  .htext p{
+  .htext p , a{
     color: #fff;
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 1px;
-    margin-bottom: 40PX;
-    font-family: 'Signika', sans-serif;
+    margin-bottom: 5PX;
+    font-family: 'Alkatra', sans-serif;
     }
+
+    .htext li{
+      color: #fff;
+      font-size: 14px;
+      width: 1100px;
+      font-family: 'Signika', sans-serif;
+      }
 
     .b_link{
       color: #0b5731;
       font-size: 18px;
+      letter-spacing: 1px;
+      font-family: 'Alkatra';
       transition: all 0.3s ease 0s;
       text-decoration: none;
   }
@@ -250,9 +262,9 @@ header .logo{
     }
   
     .stext{
-      width: 700px;
+      width: 900px;
       max-width: 100%;
-      padding: 0 10px;
+      padding: 0 70px;
   
       }
     .scontent{
@@ -283,8 +295,8 @@ header .logo{
       font-size: 18px;
       line-height: 28px;
       letter-spacing: 1px;
-      margin-bottom: 40PX;
-      font-family: 'Signika', sans-serif;
+      margin-bottom: 5PX;
+      font-family: 'Alkatra', sans-serif;
       }
   
   
